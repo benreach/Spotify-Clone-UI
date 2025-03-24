@@ -14,7 +14,7 @@ export default {
         xl: "1008px"
       },
       colors: {
-        green: "#1db954",
+        greenColor: "#1db954",
         lightBlack: "#212121",
         blackColor: "#121212",
         grayColor: "#535353",

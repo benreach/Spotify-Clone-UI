@@ -71,7 +71,7 @@ function Homepage() {
         <Cards title={"Made for you"} />
         <Cards title={"Made for you"} />
       </div>
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-6 m-auto">
         <PopularAlbum title={"Popular album"}/>
         <PopularAlbum title={"For fans of Sinn Sisamuth"}/>
         <PopularAlbum title={"Popular album"}/>

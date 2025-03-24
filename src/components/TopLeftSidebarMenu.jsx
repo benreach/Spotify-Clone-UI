@@ -5,7 +5,7 @@ function TopLeftSidebarMenu() {
   return (
     <div className="sticky top-0 bg-blackColor">
       {/* HEADER */}
-      <div className="flex justify-between items-center pl-3 pr-4 py-2">
+      <div className="flex justify-between items-center pl-3 pr-4">
         <div className="flex items-center gap-4">
           <div>
             <svg
