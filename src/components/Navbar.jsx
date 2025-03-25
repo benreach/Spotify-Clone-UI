@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center h-[48px] py-2 px-2 mt-1 mb-1 ml-2">
       {/* LOGO */}
-      <div className="flex-1">
+      <Link to={"/"} className="flex-1">
         <svg
           role="img"
           viewBox="0 0 24 24"
@@ -22,7 +22,7 @@ function Navbar() {
             transform="translate(-0.95,0)"
           ></path>
         </svg>
-      </div>
+      </Link>
       {/* HOME */}
       <div className="flex-1 flex justify-between items-center relative gap-2">
         <Link to="/" className="bg-lightBlack px-2 py-2 rounded-full hover:scale-2 cursor-pointer">

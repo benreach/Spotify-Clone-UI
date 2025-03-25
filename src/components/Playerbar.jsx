@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 function Playerbar() {
   return (
-    <div className="absolute z-20 bottom-0 w-screen h-[72px] flex items-center justify-between px-4">
+    <div className="absolute z-20 bottom-0 min-w-[800px] w-screen h-[72px] flex items-center justify-between px-4">
       {/* LEFT */}
-      <div className="w-[30%] flex items-center gap-4">
+      <div className="hidden w-[30%] sm:flex items-center gap-4">
         <Link>
           <img
             src="/profile.svg"
@@ -35,7 +35,7 @@ function Playerbar() {
         </div>
       </div>
       {/* MIDDLE */}
-      <div className="flex-1 flex flex-col items-center gap-4">
+      <div className="w-[45%] sm:w-full sm:flex-1 flex flex-col items-center gap-4 pr-4 ">
         <div className="flex gap-8">
           <button>
             <svg
@@ -113,7 +113,7 @@ function Playerbar() {
         </div>
       </div>
       {/* RIGHT */}
-      <div className="w-[30%] flex items-center gap-4 justify-end">
+      <div className="hidden w-[30%] sm:flex items-center gap-4 justify-end">
         <div>
           <svg
             data-encore-id="icon"

@@ -9,7 +9,7 @@ function ArtistPage() {
   return (
     <div className="w-full flex flex-col gap-4">
       <div>
-        <div className="flex gap-2 items-center h-[60px] px-4 sticky top-0 z-20 bg-gradient-to-b from-blackColor to-lightBlack">
+        <div className="flex gap-2 items-center h-[60px] px-4 sticky top-0 z-20 bg-gradient-to-b from-lightBlack to-blackColor">
           <div className="bg-greenColor rounded-full px-2 py-2">
             <svg
               data-encore-id="icon"
