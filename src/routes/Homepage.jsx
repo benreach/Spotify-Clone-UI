@@ -19,11 +19,16 @@ function Homepage() {
       </div>
       <div className="bg-gradient-to-b from-violet-800 hover:to-lightBlack">
         <div className="flex flex-col gap-4 px-8 py-4 ">
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <SingleBox
               categery={"artist"}
               songTitle={"For You"}
               artistName={"REACH"}
+            />
+            <SingleBox
+              categery={"playlist"}
+              songTitle={"For You"}
+              playlistTitle={"Liked songs"}
             />
             <SingleBox
               categery={"artist"}
@@ -31,9 +36,9 @@ function Homepage() {
               artistName={"REACH"}
             />
             <SingleBox
-              categery={"artist"}
+              categery={"playlist"}
               songTitle={"For You"}
-              artistName={"REACH"}
+              playlistTitle={"Test your love"}
             />
             <SingleBox
               categery={"artist"}
@@ -41,19 +46,14 @@ function Homepage() {
               artistName={"REACH"}
             />
             <SingleBox
-              categery={"artist"}
+              categery={"album"}
               songTitle={"For You"}
-              artistName={"REACH"}
-            />
-            <SingleBox
-              categery={"artist"}
-              songTitle={"For You"}
-              artistName={"REACH"}
+              
             />
           </div>
         </div>
       </div>
-      <div className="pl-6 pt-4 ">
+      <div className=" ">
         <Cards title={"Made for you"} />
         <Cards title={"Jump back in"} />
         <Cards title={"Made for you"} />
@@ -71,7 +71,7 @@ function Homepage() {
         <Cards title={"Made for you"} />
         <Cards title={"Made for you"} />
       </div>
-      <div className="grid grid-cols-1 gap-6 m-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 m-aut0">
         <PopularAlbum title={"Popular album"}/>
         <PopularAlbum title={"For fans of Sinn Sisamuth"}/>
         <PopularAlbum title={"Popular album"}/>

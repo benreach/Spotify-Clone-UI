@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 function Footer() {
   return (
     <div className='pt-20  pl-8 m-auto'>
-      <div className='grid grid-cols-5 gap-4 items-start'>
+      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 items-start'>
         <div className='flex flex-col gap-1 justify-center'>
           <h1 className='text-md'>Company</h1>
           <span>About</span>

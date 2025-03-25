@@ -46,6 +46,7 @@
     background-color: #535353;
     border-radius: 20px;
     transition: all 5s ease display;
+    display: none;
 }
 ::-webkit-scrollbar-thumb:hover{
     background: #b3b3b3;

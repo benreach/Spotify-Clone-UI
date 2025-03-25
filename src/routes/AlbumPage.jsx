@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function AlbumPage() {
   return (
-    <div>AlbumPage</div>
-  )
+    <div>
+      Album
+    </div>
+  );
 }
 
-export default AlbumPage
+export default AlbumPage;

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
 
-function SingleBox({ songTitle, artistName, categery, playlistTitle }) {
+function SingleBox({ songTitle, artistName, categery, playlistTitle}) {
   return (
-    <Link className="flex items-center bg-lightBlack bg-opacity-70 rounded-r-sm gap-2 hover:bg-gradient-to-r from-grayColor to-lightBlack cursor-pointer">
+    <Link to={`${categery === 'artist'? "/artist/:id": categery === 'playlist'? "/playlist/:id":"/album/:id"}`} className="flex items-center bg-lightBlack bg-opacity-70 gap-2 hover:bg-gradient-to-r from-grayColor to-lightBlack cursor-pointer rounded-r-md">
       <img
-        src={`/${categery === "artist" ? "profile.svg" : "spotify-logo.svg"}`}
+        src={`/${categery === "artist" ? "profile.svg" : "profile.svg"}`}
         alt=""
         width={40}
         className="rounded-l-md"

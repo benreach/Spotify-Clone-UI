@@ -17,7 +17,7 @@ function SingleCollection({ category, title }) {
           width={48}
           className={`${category === 'artist'? "rounded-full":"rounded-lg"}`}
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="text-[0.8rem] capitalize">{category}</span>
           <span className="capitalize">{`${
             categoryTitle === "playlist" ? "Playlist" : category

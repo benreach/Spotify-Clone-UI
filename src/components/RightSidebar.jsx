@@ -8,7 +8,7 @@ import AboutArtist from "./rightSide/AboutArtist";
 
 function RightSidebar() {
   return (
-    <div className="flex flex-col w-[28%] bg-blackColor rounded-lg h-[calc(100vh-128px)] overflow-y-auto">
+    <div className="hidden xl:flex flex-col min-w-[20%] max-w-[28%]  bg-blackColor rounded-lg h-[calc(100vh-128px)] overflow-y-auto">
       <div className="flex items-center justify-between gap-4 sticky top-0 bg-blackColor px-4 py-5 z-20 ">
         <h1 className="font-bold text-sm">Liked Songs</h1>
         <div className="flex gap-4">
