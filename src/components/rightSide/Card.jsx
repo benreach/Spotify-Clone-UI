@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 function Card() {
   return (
-    <div className='flex flex-col gap-4 bg-lightBlack rounded-lg px-4 py-4'>
+    <Link to={"/album/:id"} className='flex flex-col gap-4 bg-lightBlack rounded-lg px-4 py-4'>
         <div className='flex items-center justify-between'>
             <span>Next in queue</span>
             <span>Open queue</span>
@@ -14,7 +15,7 @@ function Card() {
                 <span>TENDO</span>
             </div>
         </div>
-    </div>
+    </Link>
   )
 }
 

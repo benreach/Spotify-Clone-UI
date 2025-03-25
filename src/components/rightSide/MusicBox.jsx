@@ -1,20 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router";
 
 function MusicBox() {
   const [moreArtists, setMoreArtists] = useState(true);
   return (
     <div className="w-full m-auto flex flex-col gap-4">
-      <img
-        src="/profile.svg"
-        alt=""
-        height={400}
-        className="object-contain w-full rounded-lg m-auto"
-      />
+      <Link to="/album/:id">
+        <img
+          src="/profile.svg"
+          alt=""
+          height={400}
+          className="object-contain w-full rounded-lg m-auto"
+        />
+      </Link>
       <div className="flex items-center justify-between">
         <div className="flex flex-col leading-[15px]">
-          <span className="text-xl font-bold text-white">Song title</span>
+          <Link to={"/album/:id"} className="text-xl font-bold text-white">Song title</Link>
           <div className="flex font-semibold">
-            <span>Artist name, </span>
+            <Link to={"/artist/:id"}>Artist name, </Link>
             <span className={`${moreArtists ? "" : "hidden"}`}>
               Artist name
             </span>

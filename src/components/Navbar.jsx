@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router";
 
 function Navbar() {
+  
   return (
-    <div className="flex justify-between items-center h-[48px] py-2 px-2 mt-1 mb-1 ml-2">
+    <div className="flex justify-between items-center h-[48px] py-2 px-2 mt-1 mb-1 ml-2" >
       {/* LOGO */}
       <Link to={"/"} className="flex-1">
         <svg

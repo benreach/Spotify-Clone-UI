@@ -45,6 +45,7 @@ function HomeLayout() {
     setIsDragging(false);
   };
 
+
   useEffect(() => {
     if (isDragging) {
       document.addEventListener("mousemove", onMouseMove);
@@ -63,12 +64,12 @@ function HomeLayout() {
     <div className="flex justify-center items-center">
       <LeftSidebar />
       <div
-        className="h-[calc(100vh-150px)] cursor-grab w-2 hover:bg-lightGray rounded-full hover:transition-all duration-500 ease-in-out"
+        className="h-[calc(100vh-150px)] cursor-grab w-2 hover:bg-lightGray rounded-full hover:transition-all duration-1000 delay-100 ease-in-out"
         onMouseDown={onMouseDown}
       ></div>
       <FooterHomeLayout />
       <div
-        className="h-[calc(100vh-150px)] cursor-grab w-2 hover:bg-lightGray rounded-full hover:transition-all duration-500 ease-in-out"
+        className="h-[calc(100vh-150px)] cursor-grab w-2 hover:bg-lightGray rounded-full hover:transition-all duration-1000 delay-100 ease-in-out"
         onMouseDown={onMouseDown}
       ></div>
 

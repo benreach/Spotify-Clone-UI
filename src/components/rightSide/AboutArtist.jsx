@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function AboutArtist() {
   return (
-    <Link className="">
+    <Link to={"/artist/:id"} className="">
       <div className="flex flex-col gap-4">
         <div className="relative">
           <img

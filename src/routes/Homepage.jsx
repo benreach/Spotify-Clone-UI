@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SingleBox from "../components/middle/SingleBox";
 import Cards from "../components/middle/Cards";
 import PopularAlbum from "../components/middle/PopularAlbum";
 
 function Homepage() {
+
+  const topRef = useRef(0);
+
+  const handleClick = () => {
+    if(topRef.current){
+      topRef.current.scrollTop = 0;
+    }
+    alert("clicked")
+  }
+
+
   return (
-    <div className="flex flex-col ">
-      <div className="flex items-center gap-4 sticky top-0 z-1 px-8 py-3 bg-violet-800 z-20 ">
+    <div className="flex flex-col" >
+      <div className="flex items-center gap-4 sticky top-0 z-1 px-8 py-3 bg-violet-800 z-20 " onDoubleClick={handleClick}>
         <span className="rounded-full py-2 px-4 text-[0.7rem] font-semibold  bg-white text-black cursor-pointer">
           All
         </span>
@@ -53,7 +64,7 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <div className=" ">
+      <div className="overflow-x-scroll">
         <Cards title={"Made for you"} />
         <Cards title={"Jump back in"} />
         <Cards title={"Made for you"} />
